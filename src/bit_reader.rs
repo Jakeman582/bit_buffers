@@ -39,8 +39,8 @@ impl BitReader {
     /// This function will return an error if `file_name` does not already 
     /// exist. Other errors may be returned according to `OpenOptions::open`.
     /// 
-    /// It will also return an error if it encounters while reading an error of 
-    /// a kind other than `io::ErrorKind::Interrupted`.
+    /// It will also return an error if it encounters an error of 
+    /// any kind other than `io::ErrorKind::Interrupted`.
     ///
     /// # Examples
     /// ```
